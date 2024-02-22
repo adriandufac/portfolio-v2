@@ -7,7 +7,8 @@ const ProjectsCard = () => {
   const [idDisplayed, setIdDisplayed] = useState(1);
 
   return (
-    <>
+    <div className={styles.mainContainer}>
+      <h2>Projects</h2>
       {projects.map((project) => (
         <div
           key={project.id}
@@ -16,9 +17,10 @@ const ProjectsCard = () => {
           }
         >
           <img className={styles.imgProject} src={project.img}></img>
-          <div>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
+
+          <h3 className={styles.title}>{project.title}</h3>
+          <p className={styles.description}>{project.description}</p>
+          <div className={styles.tagContainer}>
             <Tags></Tags>
           </div>
         </div>
@@ -37,7 +39,7 @@ const ProjectsCard = () => {
           </label>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

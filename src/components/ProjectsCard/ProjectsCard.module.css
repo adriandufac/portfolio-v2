@@ -1,15 +1,50 @@
 .hidden  {
     display: none;
 }
+
+.mainContainer{
+    height: 100%;
+}
 .contentContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'title  title title title'
+    'img  desc desc desc'
+    'img  desc desc desc'
+    'img  desc desc desc'
+    'tags  tags tags tags'
+    'input  input input input';
+    height: 60vh;
+}
+.tagContainer{
+    /* background-color: blue; */
+    grid-area: tags;
+    text-align: center;
+}
+.title{
+    text-align: center;
+    grid-area: title;
+}
+.description{
+    text-align: center;
+    grid-area: desc;
+    margin: 0;
 }
 
 .inputContainer{
+    grid-area: input;
     display: flex;
     justify-content: space-around;
+    margin-left: 40%;
+    margin-right: 40%;
 }
 
 .imgProject{
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: img;
+    text-align: left;
     width : 100px;
+    height: 50px;
 }

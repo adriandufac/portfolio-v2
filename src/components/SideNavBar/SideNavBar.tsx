@@ -9,7 +9,7 @@ const elements = ["About", "Experience", "Projects"];
 
 const SideNavBar = ({ enlightenElement, handleClick }: SideNavBarProps) => {
   return (
-    <div className="main-navbar-container">
+    <div className={styles.container}>
       <ul className={styles.ul}>
         {elements.map((element) => (
           <a>

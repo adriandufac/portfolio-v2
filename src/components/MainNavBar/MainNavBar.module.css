@@ -1,15 +1,17 @@
  
  .container {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     color:#C5D1ED;
     
   }
   
   .ul {
+    margin-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
+    margin-right: 40px;
   }
   
   .logoContainer {

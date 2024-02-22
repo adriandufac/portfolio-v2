@@ -5,7 +5,8 @@ const projects = [
     id: 1,
     title: "Projet 1",
     img: test,
-    description: "blabla",
+    description:
+      "ez eaze ae ,klkjngjkngd ,zanjkar kazr, aklz,kl a,kazl, azl, ela , aenaz ",
   },
   {
     id: 2,
