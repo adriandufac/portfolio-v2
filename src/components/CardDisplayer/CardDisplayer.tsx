@@ -1,4 +1,8 @@
 import style from "./CardDisplayer.module.css";
+import AboutCard from "../AboutCard/AboutCard";
+import ExperienceCard from "../ExperienceCard/ExperienceCard";
+import ProjectsCard from "../ProjectsCard/ProjectsCard";
+
 interface CardDisplayerProps {
   displayedElement: string;
 }
@@ -7,18 +11,15 @@ const CardDisplayer = ({ displayedElement }: CardDisplayerProps) => {
   const cards = [
     {
       id: "About",
-      header: "About",
-      content: "I'm a Developper",
+      content: <AboutCard />,
     },
     {
       id: "Experience",
-      header: "Experience",
-      content: "I worked at",
+      content: <ExperienceCard />,
     },
     {
       id: "Projects",
-      header: "Projects",
-      content: " - ezaeazea",
+      content: <ProjectsCard />,
     },
   ];
 
@@ -26,8 +27,7 @@ const CardDisplayer = ({ displayedElement }: CardDisplayerProps) => {
     <>
       {cards.map((card) => (
         <div className={card.id != displayedElement ? style.hidden : ""}>
-          <h2>{card.header}</h2>
-          <p>{card.content}</p>
+          {card.content}
         </div>
       ))}
     </>

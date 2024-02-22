@@ -1,5 +1,7 @@
 body{
   background-color: #111F44;
+  margin: 0;
+  padding: 0;
 }
 h2 {
   color: #C5D1ED;
@@ -7,6 +9,38 @@ h2 {
 }
 p{
   color: #7E92B7;
+}
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  color: #7E92B7;
+  background-color: #7E92B7;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #7E92B7;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  color: #C5D1ED;
+;
+  background-color: #C5D1ED;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #C5D1ED;
+  border-radius: 50%;
 }
 
 .grid-container {
