@@ -3,7 +3,7 @@ import styles from "./MainNavBar.module.css";
 const MainNavBar = () => {
   return (
     <div className={styles.container}>
-      <ul className={styles.ul}>
+      <ul className={styles.ulMain}>
         <div>
           <li>1</li>
         </div>

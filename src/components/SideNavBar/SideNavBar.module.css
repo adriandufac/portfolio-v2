@@ -3,6 +3,8 @@ li {
     list-style: none;
     color: #7E92B7;
     font-size: x-large;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .enligthen {
     color: #C5D1ED;
@@ -10,21 +12,29 @@ li {
 }
 .container{
         margin: auto;
+        margin-left: 0;
 }
 .ul{
+    display: block;
     padding-left: 0;
 }
 
  @media (max-width: 768px) { 
     .container {
         margin: 0;
+        margin-left: 40px;
         width: 100%;
     }
-    ul{
+    .ul{
         display: flex;
+        flex-direction: row ;
         justify-content: space-between;
         align-items: center;
         padding-right: 40px;
+    }
+    .li {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 } 
 
