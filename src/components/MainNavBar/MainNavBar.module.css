@@ -1,0 +1,18 @@
+ 
+ .container {
+    background-color: aquamarine;
+    color:#C5D1ED;
+    
+  }
+  
+  .ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  .logoContainer {
+    display: flex;
+    flex-direction: row;
+  }

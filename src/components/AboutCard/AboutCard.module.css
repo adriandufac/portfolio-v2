@@ -1,0 +1,8 @@
+.profilpic{
+    width : 300px;
+    border-radius: 50%;
+}
+
+.aboutcardcontainer {
+    display: flex;
+}

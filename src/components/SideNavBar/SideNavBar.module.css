@@ -1,0 +1,19 @@
+li {
+    text-decoration: none;
+    list-style: none;
+    color: #7E92B7;
+    font-size: x-large;
+}
+.enligthen {
+    color: #C5D1ED;
+    font-size: xx-large;
+}
+
+ @media (max-width: 768px) { 
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+} 
+
