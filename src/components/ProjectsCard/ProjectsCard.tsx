@@ -16,8 +16,6 @@ const ProjectsCard = () => {
             project.id != idDisplayed ? styles.hidden : styles.contentContainer
           }
         >
-          <img className={styles.imgProject} src={project.img}></img>
-
           <h3 className={styles.title}>{project.title}</h3>
           <p className={styles.description}>{project.description}</p>
           <div className={styles.tagContainer}>

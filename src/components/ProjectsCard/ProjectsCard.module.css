@@ -10,9 +10,9 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     'title  title title title'
-    'img  desc desc desc'
-    'img  desc desc desc'
-    'img  desc desc desc'
+    'desc  desc desc desc'
+    'desc  desc desc desc'
+    'desc  desc desc desc'
     'tags  tags tags tags'
     'input  input input input';
     height: 60vh;
@@ -40,11 +40,3 @@
     margin-right: 40%;
 }
 
-.imgProject{
-    margin-left: auto;
-    margin-right: auto;
-    grid-area: img;
-    text-align: left;
-    width : 100px;
-    height: 50px;
-}
