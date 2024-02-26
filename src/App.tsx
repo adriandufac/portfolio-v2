@@ -4,6 +4,8 @@ import MainNavBar from "./components/MainNavBar/MainNavBar";
 import SideNavBar from "./components/SideNavBar/SideNavBar";
 import CardDisplayer from "./components/CardDisplayer/CardDisplayer";
 
+import "./fonts/static/Oswald-Regular.ttf";
+
 function App() {
   const [cardDisplayed, setCardDisplayed] = useState("About");
   return (

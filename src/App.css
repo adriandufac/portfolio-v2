@@ -1,4 +1,10 @@
+@font-face{
+  font-family: "Oswald";   /*Can be any text*/
+  src: local("Oswald-Regular.ttf"),
+    url("./fonts/static/Oswald-Regular.ttf") format("truetype");
+}
 body{
+  font-family: "Oswald";
   background-color: #111F44;
   margin: 0;
   padding: 0;
@@ -10,6 +16,8 @@ h2 {
 p{
   color: #7E92B7;
   font-size: large;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 input[type="radio"] {
   /* Add if not using autoprefixer */
@@ -88,7 +96,7 @@ input[type="radio"]:checked {
   vertical-align: middle;
   text-align: left;
   margin-left: 0;
-  border-right: solid #C5D1ED ;
+  
   
 }
 
@@ -100,9 +108,3 @@ input[type="radio"]:checked {
   width: 100%;
   text-align: center;
 }
-
-@media (max-width: 768px) {
-  .side-navbar-container {
-    border-bottom: solid #C5D1ED ;
-  }
- }

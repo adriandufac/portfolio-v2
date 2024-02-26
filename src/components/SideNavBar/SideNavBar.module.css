@@ -5,19 +5,26 @@ li {
     font-size: x-large;
     margin-top: 5px;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 .enligthen {
     color: #C5D1ED;
     font-size: x-large;
 }
 .container{
-        margin: auto;
-        margin-left: 0;
-        
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+        height: 80%;        
 }
+
 .ul{
-    display: block;
-    padding-left: 0;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    border-right: solid #C5D1ED ;
+    /* margin-top: auto; */
+    height: 100%;
 }
 
  @media (max-width: 768px) { 
@@ -27,11 +34,14 @@ li {
         width: 100%;
     }
     .ul{
+        width: 80%;
         display: flex;
         flex-direction: row ;
         justify-content: space-between;
         align-items: center;
         padding-right: 40px;
+        border-right: none;
+        border-bottom: solid #C5D1ED ;
     }
     .li {
         margin-top: 0;
