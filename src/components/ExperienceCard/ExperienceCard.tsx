@@ -1,10 +1,11 @@
-import React from "react";
+import { setUpAnimation } from "../Services/Animation";
 
 const ExperienceCard = () => {
+  setUpAnimation("Experience");
   return (
     <>
-      <h2>Experience</h2>
-      <p>
+      <h2 className="Experience">Experience</h2>
+      <p className="Experience">
         I graduated Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Odio nostrum autem dolores aliquam explicabo eos! Ipsam laudantium
         voluptatem, consectetur nihil libero, facere voluptas fugiat dolores,

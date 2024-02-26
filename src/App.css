@@ -12,6 +12,7 @@ body{
 h2 {
   color: #C5D1ED;
   font-size: xxx-large;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 p{
   color: #7E92B7;

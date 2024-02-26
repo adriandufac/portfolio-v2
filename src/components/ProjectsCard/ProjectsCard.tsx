@@ -2,13 +2,14 @@ import { useState } from "react";
 import Tags from "../Tags/Tags";
 import projects from "./Projects";
 import styles from "./ProjectsCard.module.css";
+import { setUpAnimation } from "../Services/Animation";
 
 const ProjectsCard = () => {
   const [idDisplayed, setIdDisplayed] = useState(1);
-
+  setUpAnimation("Projects");
   return (
     <article className={styles.mainContainer}>
-      <h2>Projects</h2>
+      <h2 className="Projects">Projects</h2>
       {projects.map((project) => (
         <div
           key={project.id}
@@ -17,7 +18,9 @@ const ProjectsCard = () => {
           }
         >
           <h3 className={styles.title}>{project.title}</h3>
-          <p className={styles.description}>{project.description}</p>
+          <p className={styles.description + " Projects"}>
+            {project.description}
+          </p>
           <div className={styles.tagContainer}>
             <Tags></Tags>
           </div>

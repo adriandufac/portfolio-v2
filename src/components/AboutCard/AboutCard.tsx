@@ -1,9 +1,13 @@
 import profilpic from "../../assets/profilpic.jpg";
+import { setUpAnimation } from "../Services/Animation";
+
 import styles from "./AboutCard.module.css";
+
 const AboutCard = () => {
+  setUpAnimation("About");
   return (
     <>
-      <h2>About</h2>
+      <h2 className="About">About</h2>
       <div className={styles.aboutcardcontainer}>
         <div className={styles.imgContainer}>
           <img
@@ -13,7 +17,7 @@ const AboutCard = () => {
           ></img>
         </div>
         <span>
-          <p>
+          <p className="About">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
             aperiam dolor ex, qui ipsam ea dolore doloremque nobis ad modi porro
             asperiores consequatur mollitia! Voluptates, itaque quis? Ad cum

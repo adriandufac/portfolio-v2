@@ -8,6 +8,7 @@ import "./fonts/static/Oswald-Regular.ttf";
 
 function App() {
   const [cardDisplayed, setCardDisplayed] = useState("About");
+
   return (
     <>
       <MainNavBar handleClick={() => setCardDisplayed("About")}></MainNavBar>
