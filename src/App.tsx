@@ -8,7 +8,7 @@ function App() {
   const [cardDisplayed, setCardDisplayed] = useState("About");
   return (
     <>
-      <MainNavBar></MainNavBar>
+      <MainNavBar handleClick={() => setCardDisplayed("About")}></MainNavBar>
       <div className="grid-container">
         <aside className="side-navbar-container">
           <SideNavBar

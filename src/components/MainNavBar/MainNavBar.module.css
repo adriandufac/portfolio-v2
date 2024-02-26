@@ -4,6 +4,10 @@
     color:#C5D1ED;
     
   }
+  img {
+    width:48px;
+    height: 48px;
+  }
   
   .ulMain {
     margin-top: 0;

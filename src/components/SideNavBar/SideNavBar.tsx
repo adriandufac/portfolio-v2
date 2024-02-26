@@ -9,7 +9,7 @@ const elements = ["About", "Experience", "Projects"];
 
 const SideNavBar = ({ enlightenElement, handleClick }: SideNavBarProps) => {
   return (
-    <div className={styles.container}>
+    <nav className={styles.container}>
       <ul className={styles.ul}>
         {elements.map((element) => (
           <a>
@@ -23,7 +23,7 @@ const SideNavBar = ({ enlightenElement, handleClick }: SideNavBarProps) => {
           </a>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 };
 

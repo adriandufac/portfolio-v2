@@ -7,7 +7,7 @@ const ProjectsCard = () => {
   const [idDisplayed, setIdDisplayed] = useState(1);
 
   return (
-    <div className={styles.mainContainer}>
+    <article className={styles.mainContainer}>
       <h2>Projects</h2>
       {projects.map((project) => (
         <div
@@ -37,7 +37,7 @@ const ProjectsCard = () => {
           </label>
         ))}
       </div>
-    </div>
+    </article>
   );
 };
 
