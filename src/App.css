@@ -84,9 +84,9 @@ input[type="radio"]:checked {
     margin-left: 0;
     margin-right: 0;
   }
-  .card-container {
-    /* height: 20vh; */
-  }
+/*   .card-container {
+    height: 20vh;
+  } */
  }
 
 
