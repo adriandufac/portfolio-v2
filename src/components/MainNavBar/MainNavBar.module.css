@@ -10,12 +10,14 @@
   }
   
   .ulMain {
+    padding-left: 0px;
     margin-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
     margin-right: 40px;
+    margin-left: 40px;
   }
   
   .logoContainer {
@@ -24,4 +26,17 @@
   }
   .logoContainer li{
     margin-left: 5px;
+  }
+
+  @media (max-width: 425px) { 
+    .ulMain {
+      margin-right: 20px;
+      margin-left: 20;
+    }
+  }
+  @media (max-width: 320px) { 
+    .ulMain {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
   }

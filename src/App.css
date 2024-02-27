@@ -69,7 +69,7 @@ input[type="radio"]:checked {
   .grid-container {
     margin-left: 50px;
     margin-right: 50px;
-    height: 70vh;
+  /*   height: 70vh; */
     
   }
  }
@@ -83,6 +83,9 @@ input[type="radio"]:checked {
     'card  card card card';
     margin-left: 0;
     margin-right: 0;
+  }
+  .card-container {
+    /* height: 20vh; */
   }
  }
 

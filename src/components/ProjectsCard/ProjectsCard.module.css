@@ -32,7 +32,8 @@ label {
 .description{
     text-align: center;
     grid-area: desc;
-    margin: 0;
+    margin-left: auto;
+
 }
 
 .inputContainer{

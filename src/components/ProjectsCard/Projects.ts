@@ -1,24 +1,24 @@
-import test from "../../assets/profilpic.jpg";
+
 
 const projects = [
   {
     id: 1,
-    title: "Projet 1",
-    img: test,
+    title: "Game Hub",
     description:
-      "ez eaze ae ,klkjngjkngd ,zanjkar kazr, aklz,kl a,kazl, azl, ela , aenaz ",
+      "GameHub listing all sort of games that are fetched using rawg.io API.\n The games can be sorted by all platform or/and genre.",
+    tags: ['React', 'HTML','CSS','API']
   },
   {
     id: 2,
     title: "Projet 2",
-    img: test,
     description: "blabla2",
+    tags: ['React', 'HTML','CSS']
   },
   {
     id: 3,
     title: "Projet 3",
-    img: test,
     description: "blabla3",
+    tags: ['React', 'HTML']
   },
 ];
 

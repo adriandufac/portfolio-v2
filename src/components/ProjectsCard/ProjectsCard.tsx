@@ -22,7 +22,7 @@ const ProjectsCard = () => {
             {project.description}
           </p>
           <div className={styles.tagContainer}>
-            <Tags></Tags>
+            <Tags tagList={project.tags}></Tags>
           </div>
         </div>
       ))}

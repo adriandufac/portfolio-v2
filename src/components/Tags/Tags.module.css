@@ -1,0 +1,14 @@
+.tagsContainer {
+    display: flex;
+    justify-content: center;
+
+}
+.singleTagContainer {
+    border: solid #C5D1ED;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #7E92B7;
+    font-size: large;
+    padding: 5px;
+}
