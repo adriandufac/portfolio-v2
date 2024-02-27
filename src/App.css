@@ -4,8 +4,9 @@
     url("./fonts/static/Oswald-Regular.ttf") format("truetype");
 }
 html {
-  overflow-x: hidden;    /*  because animation come from right and cause some overflow**/
-  /* overflow-y: hidden; */
+     /*  because animation come from right and cause some overflow**/
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 body{
   font-family: "Oswald";
@@ -13,7 +14,7 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 }
 h2 {
   color: #C5D1ED;
@@ -90,9 +91,9 @@ input[type="radio"]:checked {
     margin-left: 0;
     margin-right: 0;
   }
-  .card-container {
-    height: 75vh;
-  }
+/*   .card-container {
+    height: 20vh;
+  } */
  }
 
 
@@ -117,4 +118,5 @@ input[type="radio"]:checked {
   grid-area: card;
   width: 100%;
   text-align: center;
+  display: flex;
 }

@@ -26,7 +26,9 @@ const CardDisplayer = ({ displayedElement }: CardDisplayerProps) => {
   return (
     <>
       {cards.map((card) => (
-        <div className={card.id != displayedElement ? style.hidden : ""}>
+        <div
+          className={card.id != displayedElement ? style.hidden : style.showed}
+        >
           {card.content}
         </div>
       ))}
