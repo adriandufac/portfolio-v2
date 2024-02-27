@@ -1,7 +1,6 @@
 import { gsap } from "gsap";
 import { useLayoutEffect } from "react";
 import SplitType from "split-type";
-import CardDisplayer from "../CardDisplayer/CardDisplayer";
 
 
 export const setUpAnimation = (cardDisplayed : string) => {
