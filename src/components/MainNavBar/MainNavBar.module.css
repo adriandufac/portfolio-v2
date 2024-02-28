@@ -8,6 +8,57 @@
     width:48px;
     height: 48px;
   }
+  .linkedinHoverImage {
+    display: none;
+  }
+  .linkedinContainer:hover {
+    .linkedinImage {
+      display: none;
+    }
+    
+    .linkedinHoverImage {
+      display: block;
+    }
+  }
+
+  .gitHoverImage {
+    display: none;
+  }
+  .gitContainer:hover {
+    .gitImage {
+      display: none;
+    }
+    
+    .gitHoverImage {
+      display: block;
+    }
+  }
+
+  .cvHoverImage {
+    display: none;
+  }
+  .cvContainer:hover {
+    .cvImage {
+      display: none;
+    }
+    
+    .cvHoverImage {
+      display: block;
+    }
+  }
+
+  .logoHoverImage {
+    display: none;
+  }
+  .logoContainer:hover {
+    .logoImage {
+      display: none;
+    }
+    
+    .logoHoverImage {
+      display: block;
+    }
+  }
   
   .ulMain {
     padding-left: 0px;

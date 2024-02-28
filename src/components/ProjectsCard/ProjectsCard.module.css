@@ -19,6 +19,7 @@
     'desc  desc desc desc'
     'desc  desc desc desc'
     'tags  tags tags tags'
+    'links links links links'
     'input  input input input';
     height: 60vh;
 }
@@ -30,6 +31,7 @@
 .title{
     text-align: center;
     grid-area: title;
+    color:#C5D1ED;
 }
 .description{
     text-align: center;
@@ -43,5 +45,53 @@
     justify-content: space-around;
     margin-left: 40%;
     margin-right: 40%;
+}
+.linksContainer {
+    text-align: center;
+    grid-area: links;
+}
+.ulLinks {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+.liLinks {
+    margin-right:20px;
+    margin-left:20px;
+}
+
+.link {
+    text-decoration: none;
+    
+    /* text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px; */
+}
+.singleLinkContainer{
+    color:#7E92B7;
+}
+.singleLinkContainer:hover{
+    color: #C5D1ED;
+    .radientUnderline {
+        display: none;
+    };
+    .inverseRadientUnderline{
+        display: flex;
+    }
+    
+}
+.radientUnderline {
+    height: 3px;
+    background: linear-gradient(90deg, rgba(80,119,220,1) 0%, rgba(200,157,91,1) 100%);
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.inverseRadientUnderline{
+    height: 3px;
+    background: linear-gradient(90deg, rgba(200,157,91,1) 0%, rgba(80,119,220,1) 100%);
+    margin-left: 4px;
+    margin-right: 4px;
+    display: none;
 }
 

@@ -9,8 +9,10 @@
     box-sizing:border-box;
     -webkit-box-sizing: border-box;
 }
-
-.enligthen, .sideBarLi:hover{
+.sideBarLi:hover {
+    color: #C5D1ED;
+}
+.enligthen {
     color: #C5D1ED;
     border-bottom:solid #C5D1ED ;
     border-top : solid #C5D1ED ;

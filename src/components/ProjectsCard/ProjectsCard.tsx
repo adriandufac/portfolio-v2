@@ -24,6 +24,20 @@ const ProjectsCard = () => {
           <div className={styles.tagContainer}>
             <Tags tagList={project.tags}></Tags>
           </div>
+          <div className={styles.linksContainer}>
+            <ul className={styles.ulLinks}>
+              {project.links.map((link) => (
+                <a href={link.href} target="blank" className={styles.link}>
+                  <div className={styles.singleLinkContainer}>
+                    <li className={styles.liLinks}>{link.name}</li>
+
+                    <div className={styles.radientUnderline}></div>
+                    <div className={styles.inverseRadientUnderline}></div>
+                  </div>
+                </a>
+              ))}
+            </ul>
+          </div>
         </div>
       ))}
       <div className={styles.inputContainer}>
