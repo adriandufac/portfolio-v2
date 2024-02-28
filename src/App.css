@@ -7,9 +7,15 @@ html {
      /*  because animation come from right and cause some overflow**/
   overflow-x: hidden;
   overflow-y: hidden;
+  height: 100%;
+}
+#root {
+  height: 100%;
+  display: block;
 }
 body{
   /**/
+  height:100%;
   font-family: "Oswald";
   background-color: #111F44;
   margin: 0;
@@ -53,7 +59,6 @@ input[type="radio"]:checked {
   /* Not removed via appearance */
   margin: 0;
   color: #C5D1ED;
-;
   background-color: #C5D1ED;
   width: 1.15em;
   height: 1.15em;
@@ -61,34 +66,26 @@ input[type="radio"]:checked {
   border-radius: 50%;
 }
 
-.grid-container {
+.main-container {
+  height: 90%;
   margin-left: 100px;
   margin-right: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    'side-navbar-container  card card card card'
-    'side-navbar-container  card card card card'
-    'side-navbar-container  card card card card'
-    'side-navbar-container  card card card card';
-    /* gap: 10px; */
+  display: flex;
+  padding-bottom: 200px;
 }
 @media (max-width: 768px) { 
-  .grid-container {
+  .main-container {
+    flex-direction: column;
     margin-left: 50px;
-    margin-right: 50px;
-  /*   height: 70vh; */
-    
+    margin-right: 50px;    
+  }
+  .side-navbar-container {
+    flex-basis: 10%;
   }
  }
 
  @media (max-width: 768px) { 
-  .grid-container {
-    grid-template-areas:
-    'side-navbar-container  side-navbar-container side-navbar-container side-navbar-container'
-    'card  card card card'
-    'card  card card card'
-    'card  card card card';
+  .main-container {
     margin-left: 0;
     margin-right: 0;
   }
@@ -108,16 +105,33 @@ input[type="radio"]:checked {
   vertical-align: middle;
   text-align: left;
   margin-left: 0;
-  
-  
+  flex-basis: 25%;
 }
+.side-navbar-hamburger {
+  height: 24px;
+  display:none
+ }
+@media (max-width: 768px) { 
+  .side-navbar-container {
+    display: none;
+  }
+  .side-navbar-hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ }
+
+
+ 
 
 /*** CARD STYLING ******/ 
 .card-container {
-  height: 80vh;
+  height: 100%;
   /* background-color: blueviolet; */
   grid-area: card;
   width: 100%;
   text-align: center;
+  flex-basis: 3;
   display: flex;
 }
