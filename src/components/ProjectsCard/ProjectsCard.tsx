@@ -28,16 +28,18 @@ const ProjectsCard = () => {
       ))}
       <div className={styles.inputContainer}>
         {projects.map((project) => (
-          <label className={styles.label}>
-            <input
-              name="carousel-slider"
-              className={styles.input}
-              onClick={() => setIdDisplayed(project.id)}
-              type="radio"
-              key={project.id}
-              checked={project.id === idDisplayed ? true : false}
-            ></input>
-          </label>
+          <div className={styles.singleInputContainer}>
+            <label className={styles.label}>
+              <input
+                name="carousel-slider"
+                className={styles.input}
+                onClick={() => setIdDisplayed(project.id)}
+                type="radio"
+                key={project.id}
+                checked={project.id === idDisplayed ? true : false}
+              ></input>
+            </label>
+          </div>
         ))}
       </div>
     </article>
