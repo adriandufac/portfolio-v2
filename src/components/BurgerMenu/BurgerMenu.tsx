@@ -16,7 +16,11 @@ const BurgerMenu = ({ handleClick }: BurgerMenuProps) => {
         <ul className={isHidden ? styles.hidden : styles.burgerMenu}>
           {elements.map((element) => (
             <a>
-              <li key={element} onClick={() => handleClick(element)}>
+              <li
+                className={styles.sideBarLi}
+                key={element}
+                onClick={() => handleClick(element)}
+              >
                 {element}
               </li>
             </a>

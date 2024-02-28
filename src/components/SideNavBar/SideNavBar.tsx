@@ -14,7 +14,11 @@ const SideNavBar = ({ enlightenElement, handleClick }: SideNavBarProps) => {
         {elements.map((element) => (
           <a>
             <li
-              className={enlightenElement === element ? styles.enligthen : ""}
+              className={
+                enlightenElement === element
+                  ? [styles.sideBarLi, styles.enligthen].join(" ")
+                  : styles.sideBarLi
+              }
               key={element}
               onClick={() => handleClick(element)}
             >

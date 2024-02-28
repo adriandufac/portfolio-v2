@@ -1,4 +1,4 @@
-li {
+.sideBarLi {
     text-decoration: none;
     list-style: none;
     color: #7E92B7;
@@ -6,10 +6,26 @@ li {
     margin-top: 5px;
     margin-bottom: 5px;
     cursor: pointer;
+    box-sizing:border-box;
+    -webkit-box-sizing: border-box;
 }
-.enligthen {
+
+.enligthen, .sideBarLi:hover{
     color: #C5D1ED;
+    border-bottom:solid #C5D1ED ;
+    border-top : solid #C5D1ED ;
+    /* border-top: solid #C5D1ED ; */
+    animation : drawEnligthen 2s ease forwards;
 }
+
+@keyframes drawEnligthen {
+    from {
+      max-width: 0%;
+    }
+    to {
+      max-width: 100%;
+    }
+  }
 .container{
         margin-top: auto;
         margin-bottom: auto;
@@ -18,6 +34,7 @@ li {
 }
 
 .ulSide{
+    padding-right: 10px;
     justify-content: center;
     flex-direction: column;
     display: flex;
@@ -25,6 +42,7 @@ li {
     /* margin-top: auto; */
     height: 100%;
     animation: drawBorder 2s ease forwards;
+    list-style: none;
 }
 @keyframes drawBorder {
     from {
@@ -51,15 +69,16 @@ li {
         padding-left: 40px;
         border-right: none;
         border-bottom: solid #C5D1ED ;
+        
     }
-    li {
+    .sideBarLi {
         font-size: x-large;
         margin-top: 0;
         margin-bottom: 0;
     }
 }
 @media (max-width: 375px) { 
-    li {
+    .sideBarLi {
     font-size: normal;
     }
 }

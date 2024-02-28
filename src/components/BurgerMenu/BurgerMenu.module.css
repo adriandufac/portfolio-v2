@@ -1,6 +1,33 @@
 /* a {
     cursor: pointer;
 } */
+.sideBarLi {
+    text-decoration: none;
+    list-style: none;
+    color: #7E92B7;
+    font-size: x-large;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-sizing:border-box;
+    -webkit-box-sizing: border-box;
+}
+.sideBarLi:hover{
+    color: #C5D1ED;
+    border-bottom:solid #C5D1ED ;
+    border-top : solid #C5D1ED ;
+    /* border-top: solid #C5D1ED ; */
+    animation : drawEnligthen 2s ease forwards;
+}
+
+@keyframes drawEnligthen {
+    from {
+      max-width: 0%;
+    }
+    to {
+      max-width: 100%;
+    }
+  }
 .container {
     height: 100%;
     width: 30px;
@@ -18,9 +45,11 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 82px;
-    left: -45px;
+    top: 97px;
+    left: -87px;
     padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
     z-index: 1;
 }
 .buttonBurger{
