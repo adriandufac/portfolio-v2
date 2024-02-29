@@ -87,6 +87,9 @@ input[type="radio"]:hover {
   .side-navbar-container {
     flex-basis: 10%;
   }
+  p {
+    font-size: large;
+  }
  }
 
  @media (max-width: 768px) { 
