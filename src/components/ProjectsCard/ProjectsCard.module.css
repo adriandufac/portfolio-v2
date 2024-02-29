@@ -1,6 +1,7 @@
 .singleInputContainer {
     cursor: pointer;
 }
+
 .hidden  {
     display: none;
 }
@@ -32,6 +33,7 @@
     text-align: center;
     grid-area: title;
     color:#C5D1ED;
+    font-size: x-large;
 }
 .description{
     text-align: center;

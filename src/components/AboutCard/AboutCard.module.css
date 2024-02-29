@@ -1,5 +1,5 @@
 .imgContainer{
-    
+    max-width: 50%;
     padding-bottom: 4%;
 }
 .profilpic{
@@ -17,6 +17,9 @@
 @media (max-width: 768px) {
     .aboutcardcontainer{
         flex-direction: column;
+    }
+    .imgContainer{
+        max-width: 100%;
     }
     .profilpic {
         width: 40%;

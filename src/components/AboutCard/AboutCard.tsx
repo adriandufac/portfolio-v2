@@ -18,11 +18,8 @@ const AboutCard = () => {
         </div>
         <span>
           <p className="About">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
-            aperiam dolor ex, qui ipsam ea dolore doloremque nobis ad modi porro
-            asperiores consequatur mollitia! Voluptates, itaque quis? Ad cum
-            veritatis dolore, quasi alias, officia eos modi repellendus nostrum
-            minima in.
+            Hi I'm Adrian, I'm a fullstack web developer looking for new
+            opportunties. Let's work together !
           </p>
         </span>
       </div>
