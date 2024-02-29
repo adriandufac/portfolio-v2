@@ -11,17 +11,17 @@ const projects = [
   },
   {
     id: 2,
-    title: "Projet 2",
-    description: "blabla2",
-    links : [{name:"View Site", href : "#"},{name:"GitHub", href: "#"}],
-    tags: ['React', 'HTML','CSS',]
+    title: "Club M'aide",
+    description: "School work I did at ENI school, this is a hub for company where differents users can create outdoor evenement with localisation and other users can notify if they want to participate. You can connect using username : recherche@alternance.fr and pw: recherche",
+    links : [{name:"View Site", href : "https://projet-symfony.adrian-dev.fr/"},{name:"GitHub", href: "https://github.com/adriandufac/ClubMAide"}],
+    tags: ['PHP', 'Symfony']
   },
   {
     id: 3,
-    title: "Projet 3",
-    description: "blabla3",
-    links : [{name:"View Site", href : "#"},{name:"GitHub", href: "#"}],
-    tags: ['React', 'HTML']
+    title: "TFT data Analyses",
+    description: "This is a project I made using riot API to collect data about thousands TFT games played by the best players. These datas are stored in a database using mySql. Then I use DBScan algorytm to cluster the different composition. Finaly I made an algorytm to extract statistics about all thoses compositions and store it in the database.",
+    links : [{name:"GitHub", href: "https://github.com/adriandufac/TFT_V2"}],
+    tags: ['Java','API','SQL']
   },
 ];
 
