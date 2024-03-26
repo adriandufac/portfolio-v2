@@ -19,7 +19,7 @@ const AboutCard = () => {
         <span>
           <p className="About">
             Hi I'm Adrian, I'm a fullstack web developer looking for new
-            opportunties. Let's work together !
+            opportunities. Let's work together !
           </p>
         </span>
       </div>

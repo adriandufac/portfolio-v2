@@ -13,7 +13,7 @@ const projects = [
     id: 2,
     title: "Club M'aide",
     description: "School work I did at ENI school, this is a hub for company where differents users can create outdoor evenement with localisation and other users can notify if they want to participate. You can connect using username : recherche@alternance.fr and pw: recherche",
-    links : [{name:"View Site", href : "https://projet-symfony.adrian-dev.fr/"},{name:"GitHub", href: "https://github.com/adriandufac/ClubMAide"}],
+    links : [{name:"View Site", href : "http://adrian-projet-symfony.fr/"},{name:"GitHub", href: "https://github.com/adriandufac/ClubMAide"}],
     tags: ['PHP', 'Symfony']
   },
   {
