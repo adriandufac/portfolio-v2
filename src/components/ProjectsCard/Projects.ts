@@ -1,20 +1,20 @@
 const projects = [
   {
     id: 1,
-    title: "Issue-Tracker",
+    title: "My Room",
     description:
-      "Issue-Tracker is an application allowing a team of developpers to track issues of their project. They can create, update, delete and assign issues to other developpers.",
+      "3D experience where you can explore a room and interact with objects. The project is built using Three JS, React and Typescript.",
     links: [
       {
         name: "View Site",
-        href: "https://issue-tracker-sigma-pearl.vercel.app/",
+        href: "https://my-room-z.netlify.app/",
       },
       {
         name: "GitHub",
-        href: "https://github.com/adriandufac/issue-tracker",
+        href: "https://github.com/adriandufac/my-room",
       },
     ],
-    tags: ["NextJS", "SQL", "API", "Tailwind", "TypeScript"],
+    tags: ["ThreeJS", "React", "TypeScript"],
   },
   {
     id: 2,
